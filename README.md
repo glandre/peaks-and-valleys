@@ -18,7 +18,10 @@ Assumptions:
 
 ## Instructions to Run
 
-TODO
+Run the tests with the command:
+```npm test```
+
+You can add custom tests inside `/test` folder and re run it.
 
 ## Technical Description
 
