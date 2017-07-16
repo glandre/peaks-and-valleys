@@ -2,8 +2,15 @@
   "name": "peaks-and-valleys",
   "version": "1.0.0",
   "description": "Challenge to Build Castles on Peaks and Valleys of a Land.",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/glandre/peaks-and-valleys.git"
+  },
+  "main": "dist/index.js",
   "scripts": {
+    "start": "node dist/index.js",
+    "build": "npm run clean; babel src -d dist",
+    "clean": "rm -rf dist/",
     "test": "mocha --compilers js:babel-core/register --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
