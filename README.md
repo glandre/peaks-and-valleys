@@ -16,7 +16,21 @@ Assumptions:
 
 - A valley is an integer or series of integers that is below the immediately preceding and following ints. For example, in the sequence [6,1,4] the "1" would be a valley.
 
+## Instructions to Install
+
+Run the command:
+```
+npm install
+```
+
 ## Instructions to Run
+
+Run the command:
+```
+npm start
+```
+
+## Instructions to Test
 
 Run the tests with the command:
 ```npm test```

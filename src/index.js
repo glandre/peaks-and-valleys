@@ -1,1 +1,3 @@
-console.log('Hello wrold!')
+import cli from './cli'
+
+cli()
