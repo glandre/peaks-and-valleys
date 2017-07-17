@@ -16,6 +16,25 @@ Assumptions:
 
 - A valley is an integer or series of integers that is below the immediately preceding and following ints. For example, in the sequence [6,1,4] the "1" would be a valley.
 
+## Solution Approach
+
+The idea is to compute the number of peaks, and, the number of valleys.
+The result should be `totalCastles = peaks + valleys + 1`.
+
+Notice the assumption that we can **always build a castle in the first**
+position of the array provided that it is not empty.
+Since a valley is preceded by at least one `DOWN` direction, and a peak is
+preceded by at least one `UP` direction, it is safe to say that there will
+be no peak or valley starting from the first position.
+
+Because of that, it's safe to add one to the sum of peaks and valleys.
+This `one` will also handle plain areas and array with only one number.
+
+### Complexity
+
+The algorithm is **linear amortized**, because `getDirections`, `countPeaks`
+and `countValleys` are linear and are run only once each.
+
 ## Instructions to Install
 
 Run the command:
@@ -61,7 +80,7 @@ Here is the step-by-step I followed in order to create this repository.
   npm init
   npm install --save-dev mocha
   mkdir src
-  nano src/index.js 
+  nano src/index.js
   mkdir test
   nano test/index.js
   nano test/test.js
@@ -86,4 +105,3 @@ Here is the step-by-step I followed in order to create this repository.
 - Babel
   - Setup: http://babeljs.io/docs/setup/#installation
   - Testing in ES6 (ES2015) with Mocha and Babel: http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/
-

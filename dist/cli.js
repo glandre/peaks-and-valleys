@@ -21,7 +21,7 @@ function run() {
     try {
       // quit instruction
       if (line.trim().toLowerCase() === 'quit') {
-        console.log('\n\nBye!');
+        console.log('\nBye!');
         process.exit(0);
       }
 

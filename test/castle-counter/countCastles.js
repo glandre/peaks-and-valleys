@@ -17,6 +17,12 @@ describe('countCastles', () => {
       2
     )
   })
+  it('Should return 1 if array is [1, 1, 1] (plain area)', () => {
+    assert.equal(
+      countCastles([1, 1, 1]),
+      1
+    )
+  })
   // in-depth test
   it('Should return 5 if array is [2, 2, 2, 1, 2, 2, 3, 1, 7, 2]', () => {
     assert.equal(
